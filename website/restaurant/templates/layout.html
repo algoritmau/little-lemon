@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little Lemon Restaurant</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}" />
+  </head>
+  <body>
+    <div class="layout">
+      {% include 'partials/_header.html' %}
+
+      <main>
+        {% block content %}
+        {% endblock %}
+      </main>
+
+      {% include 'partials/_footer.html' %}
+    </div>
+
+    <script>
+      function handleMobileNavbarToggle() {
+        const navbarOpener = document.querySelector('.navbar__opener')
+        const navbarCloser = document.querySelector('.navbar__closer')
+        const navbarItems = document.querySelector('.navbar__items')
+
+        navbarOpener.addEventListener('click', () => {
+          navbarItems.classList.add('navbar__items--visible')
+          // Show navbar closer
+          navbarCloser.classList.add('navbar__closer--visible')
+          navbarCloser.classList.remove('navbar__closer--hidden')
+          // Hide navbar opener
+          navbarOpener.classList.add('navbar__opener--hidden')
+          navbarOpener.classList.remove('navbar__opener--visible')
+        })
+
+        navbarCloser.addEventListener('click', () => {
+          navbarItems.classList.remove('navbar__items--visible')
+          // Show navbar opener
+          navbarOpener.classList.add('navbar__opener--visible')
+          navbarOpener.classList.remove('navbar__opener--hidden')
+          // Hide navbar closer
+          navbarCloser.classList.add('navbar__closer--hidden')
+          navbarCloser.classList.remove('navbar__closer--visible')
+        })
+      }
+
+      handleMobileNavbarToggle()
+    </script>
+  </body>
+</html>

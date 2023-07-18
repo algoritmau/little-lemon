@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <article class="about">
+    <h1 class="about__title">Welcome to Little Lemon!</h1>
+    <p>
+      At Little Lemon, we take pride in serving the best of Mediterranean cuisine,
+      inspired by the rich culinary traditions of Italy, Greece, and Turkey. Our
+      restaurant is a celebration of the vibrant flavors and fresh ingredients
+      that define the Mediterranean region.
+    </p>
+    {% include "partials/_separator.html" %}
+    <p>
+      Meet our talented chef, Adrián, hailing all the way from Italy. With a
+      passion for authentic Mediterranean cooking and years of experience honing
+      his craft, Chef Adrián brings a touch of genuine Italian flair to every dish
+      he creates. His dedication to using only the finest ingredients and
+      traditional recipes ensures that each plate is a delightful culinary
+      experience you won't forget.
+    </p>
+    <figure class="about__image">
+      {% load static %}
+      <img src="{% static '/images/chef.jpg' %}" alt="Chef Adrian" />
+    </figure>
+    {% include "partials/_separator.html" %}
+    <p>
+      Our menu showcases a harmonious blend of traditional and contemporary
+      dishes, all carefully curated to tantalize your taste buds. From savory
+      pasta dishes reminiscent of Italian grandmothers' kitchens to mouthwatering
+      Greek kebabs and Turkish delicacies, every item on our menu is crafted with
+      love and attention to detail.
+    </p>
+    <figure class="about__image">
+      {% load static %}
+      <img src="{% static '/images/salmon.jpg' %}" alt="Salmon on a plate" />
+    </figure>
+    {% include "partials/_separator.html" %}
+    <p>
+      At Little Lemon, we believe that great food brings people together, and we
+      strive to create a warm and inviting atmosphere where you can enjoy
+      memorable moments with your loved ones. Whether you're dining in for a
+      special occasion or simply stopping by for a quick lunch, our friendly staff
+      will ensure that your experience is nothing short of exceptional.
+    </p>
+    <figure class="about__image">
+      {% load static %}
+      <img src="{% static '/images/customer.jpg' %}" alt="A happy customer eating at Little Lemon" />
+    </figure>
+    {% include "partials/_separator.html" %}
+    <p>
+      We invite you to join us at Little Lemon and embark on a culinary journey
+      through the sun-kissed flavors of the Mediterranean. Savor the essence of
+      Italy, Greece, and Turkey in every bite, and let our passion for delicious
+      food and warm hospitality leave a lasting impression on your heart.
+    </p>
+    <p>Come, let's share a taste of the Mediterranean together!</p>
+    <p>Buon Appetito! Kalí óreksi! Afiyet olsun!</p>
+  </article>
+{% endblock %}

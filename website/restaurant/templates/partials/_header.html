@@ -1,0 +1,56 @@
+<header class="header">
+  <a href="/">
+    {% load static %}
+    <img
+      class="header__logo"
+      src="{% static '/images/logo-h.png' %}"
+      alt="Little Lemon Restaurant"
+    />
+  </a>
+  <nav class="navbar">
+    <button class="navbar__opener navbar__opener--visible">
+      <svg
+        width="24px"
+        height="24px"
+        stroke-width="1.5"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        color="#18181b"
+      >
+        <path
+          d="M3 5h18M3 12h18M3 19h18"
+          stroke="#18181b"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </svg>
+    </button>
+    <button class="navbar__closer navbar__closer--hidden">
+      <svg
+        width="24px"
+        height="24px"
+        stroke-width="1.5"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        color="#18181b"
+      >
+        <path
+          d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
+          stroke="#18181b"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </svg>
+    </button>
+    <ul class="navbar__items">
+      <li class="navbar__item"><a href="/">Home</a></li>
+      <li class="navbar__item"><a href="/menu">Menu</a></li>
+      <li class="navbar__item"><a href="/book">Book</a></li>
+      <li class="navbar__item"><a href="/about">About</a></li>
+    </ul>
+  </nav>
+</header>

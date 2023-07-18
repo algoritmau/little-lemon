@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% include "partials/_hero.html" %}
+
+<div class="banner">
+  <h2 class="banner__title">Special Offer</h2>
+  <p class="banner__tagline">30% OFF This Weekend</p>
+  <a href="/book" class="cta cta--tertiary">Book Now</a>
+</div>
+
+<div class="features-container">
+  <lu class="features">
+    <li class="feature-card">
+      <figure class="feature-card__image">
+        {% load static %}
+        <img src="{% static '/images/menu-card.jpg' %}" alt="Our New Menu" />
+      </figure>
+      <h3 class="feature-card__title">Our New Menu</h3>
+      <p class="feature-card__description">
+        Our new menu consists of 12-15 seasonal items based on Italian, Greek,
+        and Turkish cuisines.
+      </p>
+      <a href="/menu" class="link feature-card__cta"
+        >Check our menu <span>→</span></a
+      >
+    </li>
+    <li class="feature-card">
+      <figure class="feature-card__image">
+        {% load static %}
+        <img src="{% static '/images/reserve-card.jpg' %}" alt="Book a table" />
+      </figure>
+      <h3 class="feature-card__title">Book a Table</h3>
+      <p class="feature-card__description">
+        Reserve your table for your next dining experience.
+      </p>
+      <a href="/book" class="link feature-card__cta">Book Now <span>→</span></a>
+    </li>
+    <li class="feature-card">
+      <figure class="feature-card__image">
+        {% load static %}
+        <img
+          src="{% static '/images/opening-hours-card.jpg' %}"
+          alt="Opening Hours"
+        />
+      </figure>
+      <h3 class="feature-card__title">Opening Hours</h3>
+      <p class="feature-card__description">
+        Little Lemon is open 7 days a week from 10AM to 11PM. We close on
+        national holidays.
+      </p>
+      <a href="/about" class="link feature-card__cta"
+        >Learn More <span>→</span></a
+      >
+    </li>
+  </lu>
+</div>
+<!-- Testimonials -->
+{% endblock %}
