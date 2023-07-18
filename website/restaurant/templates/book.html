@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="booking">
+    <h1 class="booking__title">Book a Table</h1>
+    <p class="booking__tagline">
+        Please fill out the form below to make your reservation.
+    </p>
+    <form action="" method="post" class="booking__form">
+        {% csrf_token %}
+        
+        {{ form.as_div }}
+
+        <button class="cta cta--primary" type="submit">Book Now</button>
+    </form>
+</section>
+{% endblock %}

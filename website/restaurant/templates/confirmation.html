@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<article class="booking-confirmation">
+    <h1 class="booking-confirmation__title">Booking Confirmation</h1>
+    <figure class="booking-confirmation__graphic">
+        {% load static %}
+        <img
+            src="{% static '/images/booking-confirmation.png' %}"
+            alt="Booking Confirmation"
+        />
+    </figure>
+    <p class="booking-confirmation__text">
+        We have successfully reserved your table. Please check your email for
+        confirmation and details.
+    </p>
+    <a href="/" class="cta cta--primary">Go Home</a>
+</article>
+{% endblock %}
