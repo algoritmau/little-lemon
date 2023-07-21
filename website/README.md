@@ -10,6 +10,18 @@ This is the main website for the Little Lemon project. It's a website made with 
 
 <img src="../previews/website-preview-mobile.png" style="display: block; width: 48%; margin: 0 auto 32px auto; border: 1px solid #14141408;">
 
+### Menu Page
+
+<img src="../previews/preview-menu-desktop.png" style="display: block; width: 80%; margin: 0 auto 32px auto; border: 1px solid #14141408;">
+
+<img src="../previews/preview-menu-mobile.png" style="display: block; width: 48%; margin: 0 auto 32px auto; border: 1px solid #14141408;">
+
+### Menu Item Page
+
+<img src="../previews/preview-menu-item-desktop.png" style="display: block; width: 80%; margin: 0 auto 32px auto; border: 1px solid #14141408;">
+
+<img src="../previews/preview-menu-item-mobile.png" style="display: block; width: 48%; margin: 0 auto 32px auto; border: 1px solid #14141408;">
+
 ### Booking Page
 
 <img src="../previews/preview-book-desktop.png" style="display: block; width: 80%; margin: 0 auto 32px auto; border: 1px solid #14141408;">
@@ -30,13 +42,13 @@ This is the main website for the Little Lemon project. It's a website made with 
 
 ## Project/Folder Structure
 
-- `website/` - The main Django project.
-- `website/restaurant` - The main Django application.
+-   `website/` - The main Django project.
+-   `website/restaurant` - The main Django application.
 
 ## Requirements
 
-- Python 3.8
-- Django 3.1.7
+-   Python 3.8
+-   Django 3.1.7
 
 ## Installation
 

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block content %}
+<article class="menu-item">
+    <h1 class="menu-item__title">{{ item.name }}</h1>
+    <div class="menu-item__info">
+        <div class="menu-item__image">
+            <img src="{% static item.img_url %}" alt="{{ item.name }}">
+        </div>
+        <div class="menu-item__text">
+            <p class="menu-item__description">{{ item.description }}</p>
+            <p class="menu-item__price">${{ item.price }}</p>
+        </div>
+    </div>
+    <a href="/menu" class="cta cta--primary">Back to Menu</a>
+</article>
+{% endblock %}

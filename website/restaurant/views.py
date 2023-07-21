@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from restaurant.forms import BookingForm
 
+from .models import Category, Item
+
 
 def home(request):
     return render(request, 'home.html')
@@ -27,3 +29,26 @@ def book(request):
     context = {'form': form}
 
     return render(request, 'book.html', context)
+
+
+def menu(request):
+    categories = Category.objects.all()
+    items_by_category = {}
+
+    for category in categories:
+        items_by_category[category] = Item.objects.filter(category=category)
+
+    context = {
+        'items_by_category': items_by_category,
+    }
+
+    return render(request, 'menu.html', context)
+
+
+def item(request, slug=None):
+    if slug:
+        item = Item.objects.get(slug=slug)
+    else:
+        item = None
+
+    return render(request, 'item.html', {'item': item})

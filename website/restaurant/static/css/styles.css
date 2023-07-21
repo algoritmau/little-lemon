@@ -520,6 +520,172 @@ header .navbar__item {
 
 /* 
   ====================
+  MENU PAGE STYLES
+  ====================
+ */
+.menu {
+    max-width: 80rem;
+    padding: 4rem 2.4rem;
+}
+
+.menu__title {
+    margin-block-end: 2.4rem;
+}
+
+.menu__categories {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-block-end: 4rem;
+}
+
+.menu__category__title {
+    font-size: clamp(4rem, 2vw, 4.8rem);
+    line-height: 100%;
+}
+
+.menu__items {
+    display: flex;
+    width: calc(100vw - 4.8rem);
+    max-width: 100%;
+    gap: 2.4rem;
+    margin-block-start: -0.8rem;
+    overflow-x: scroll;
+    /* No scrollbars */
+    scrollbar-width: none;
+}
+
+.menu__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-block-end: 2.4rem;
+    list-style: none;
+    width: 25.6rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.menu__item__image {
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    margin-block-end: 0.8rem;
+}
+
+.menu__item__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.8rem;
+}
+
+.menu__item__title {
+    font-size: clamp(2.4rem, 2vw, 2.8rem);
+    line-height: 100%;
+    margin-block-end: 0.4rem;
+    color: var(--color-green);
+    width: fit-content;
+}
+
+.menu__item__price {
+    font-size: clamp(1.6rem, 2vw, 1.8rem);
+    font-weight: bold;
+    line-height: 100%;
+    margin-block-start: 0.8rem;
+    margin-block-end: 0.4rem;
+    color: var(--color-gray);
+}
+
+.menu__disclaimer {
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    line-height: 144%;
+    color: var(--color-gray);
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 6.4rem auto;
+}
+
+.menu__message,
+.menu__greeting {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.menu__message {
+    font-size: clamp(2rem, 2vw, 2.4rem);
+    line-height: 144%;
+    margin-block-end: 4rem;
+}
+
+.menu__greeting {
+    font-size: clamp(2rem, 2vw, 2.4rem);
+    line-height: 144%;
+    font-style: italic;
+    margin-block-end: 0.4rem;
+    width: 80%;
+    color: var(--color-green);
+}
+
+/* 
+  ====================
+  ITEM PAGE STYLES
+  ====================
+ */
+.menu-item {
+    max-width: 80rem;
+    padding: 4rem 2.4rem;
+}
+
+.menu-item__title {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 2.4rem auto;
+}
+
+.menu-item__image {
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    margin-block-end: 2.4rem;
+}
+
+.menu-item__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.8rem;
+}
+
+.menu-item__text {
+    margin-block-end: 4.8rem;
+}
+
+.menu-item__description {
+    font-size: clamp(1.8rem, 2vw, 2.1rem);
+    line-height: 144%;
+    margin-block-end: 2.4rem;
+}
+
+.menu-item__price {
+    font-size: clamp(2rem, 2vw, 2.4rem);
+    font-weight: bold;
+    line-height: 100%;
+    margin-block-start: 0.8rem;
+    margin-block-end: 0.4rem;
+    color: var(--color-gray);
+}
+
+.menu-item .cta {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+/* 
+  ====================
   BOOKING PAGE STYLES
   ====================
  */
@@ -783,10 +949,59 @@ header .navbar__item {
         padding: 8rem 4.8rem;
     }
 
-    .about {
+    /* 
+  ====================
+  MENU PAGE STYLES
+  ====================
+ */
+    .menu {
         padding: 8rem 2.4rem;
     }
 
+    .menu__categories {
+        margin-block-end: 6.4rem;
+    }
+
+    .menu__category__title {
+        font-size: clamp(4rem, 2vw, 5.6rem);
+    }
+
+    .menu__items {
+        width: 100%;
+        margin-block-end: 6.4rem;
+    }
+
+    .menu__item {
+        width: 32rem;
+    }
+
+    .menu__disclaimer {
+        margin: 0 auto 9.6rem auto;
+    }
+
+    /* 
+  ====================
+  ITEM PAGE STYLES
+  ====================
+ */
+    .menu-item {
+        padding: 8rem 2.4rem;
+    }
+
+    .menu-item__text {
+        margin-inline-start: 2px;
+        margin-block-end: 6.4rem;
+    }
+
+    .menu-item__description {
+        margin-block-end: 2.8rem;
+    }
+
+    /*
+    ====================
+    ABOUT PAGE STYLES
+    ====================
+    */
     .about__title {
         line-height: 80%;
     }
